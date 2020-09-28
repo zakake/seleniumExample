@@ -2,8 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
-
-driver = webdriver.Chrome(executable_path="./drivers/chromedriver.exe")
+driver = webdriver.Chrome(executable_path="../drivers/chromedriver.exe")
 driver.get("http://the-internet.herokuapp.com/login")
 
 # Input username
@@ -16,3 +15,4 @@ password.submit()
 
 time.sleep(5)
 driver.quit()
+

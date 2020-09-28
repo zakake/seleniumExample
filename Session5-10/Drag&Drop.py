@@ -4,7 +4,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 
 
-driver = webdriver.Chrome(executable_path="./drivers/chromedriver.exe")
+driver = webdriver.Chrome(executable_path="../drivers/chromedriver.exe")
 driver.get("http://demo.guru99.com/test/drag_drop.html")
 
 drag_location = driver.find_element(by=By.XPATH, value="//*[@id='fourth']")
